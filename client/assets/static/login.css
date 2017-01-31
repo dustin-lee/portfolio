@@ -1,0 +1,22 @@
+#login{
+  height: 100%;
+}
+#mentorlogin, #menteelogin{
+width: 400px;
+margin-left: 10%;
+margin-top: 10%;
+display: inline-block;
+float: center;
+font-family: lato, sans-serif;
+}
+
+.submit{
+  margin-left: 23%;
+  width: 150px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #355C7D;
+  border-radius: 10px;
+  background: white;
+  font-size: 20px;
+}

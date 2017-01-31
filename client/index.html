@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="utf-8">
+<title>Dustin</title>
+<script src="jquery.js"></script>
+<script src="angular.js"></script>
+<script src="angular-route.min.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/factories/contactFactory.js"></script>
+<script src="assets/controllers/newContactController.js"></script>
+<script src="assets/controllers/messageController.js"></script>
+<!-- <script src="assets/iconscript.js"></script> -->
+<!-- <script src="ng-file-upload-shim.min.js"></script>
+<script src="ng-file-upload.min.js"></script> -->
+<link rel="shortcut icon" href="assets/static/favicon.ico" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" type="text/css" href="assets/static/w3.css">
+<link rel="stylesheet" type="text/css" href="assets/static/workcss.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<script>
+// $(document).ready(function () {
+//     window.scrollTo(0,0);
+// });
+function reloading(){
+  location.reload();
+  window.scrollTo(0,0);
+};
+$(document).ready(function(){
+   var scroll_start = 0;
+   var startchange = $('.topnav');
+   var offset = startchange.offset();
+   $(document).scroll(function() {
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $('.topnav').css('background-color', 'white');
+          $('.topnav').css('box-shadow', '0 2px 2px rgba(50, 50, 50, 0.35)');
+          $('ul.topnav li a').css('color', '#548dd6');
+          $('ul.topnav li a:hover').css('color', '#ccc');
+       } else {
+         if ($(window).width() <= 479) {
+          $('.topnav').css('background-color', 'transparent');
+          $('.topnav').css('box-shadow', 'none');
+          $('ul.topnav li a').css('color', '#ccc');
+        }else{
+          $('.topnav').css('background-color', 'transparent');
+          $('.topnav').css('box-shadow', 'none');
+          $('ul.topnav li a').css('color', 'white');
+        }
+       }
+   });
+});
+
+function myFunction() {
+    var x = document.getElementById("navbarRep");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+        $x.className
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+</head>
+<body>
+  <div id="navbar">
+    <ul class="topnav" id="navbarRep">
+      <a href='#/' onclick="reloading()"><img class='dalogo' src="assets/static/dustinicon.png"></a>
+      <li><a href"#/"></a></li>
+      <!-- <li><a class="currentpage" href="#/contact">Contact</a></li> -->
+      <li><a class="currentpage" href="#/work">Work</a></li>
+      <li><a class="currentpage" href="#/projects">Projects</a></li>
+      <li><a class="currentpage" href="#/" onclick="reloading()">About</a></li>
+      <li class="icon">
+      <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+    </li>
+    </ul>
+  </div>
+
+<div ng-view="" ></div>
+<div id='contactme'>
+  <h1 class='subheading4'>Lets Get in Touch!</h1>
+  <h3> Available for freelance work</h3>
+  <p> Message me if you want to get started with a project!</br>
+  <center><p id="messageme"><i class="fa fa-envelope-o"><strong><a href="malito:d.dustinlee@gmail.com?Subject=Hello" target="_top">MESSAGE ME</strong></a></i></p></center>
+</div>
+<div id="footer">
+  <div id='links'>
+    <i class="fa fa-github fa-2x" style="color: #fff;"></i><a href="https://github.com/miniducks" style="margin-right: 50px;" class='footerlinks'>Github</a>
+    <i class="fa fa-linkedin fa-2x" style="color: #fff;"></i><a href="https://www.linkedin.com/in/dustinleedl" class='footerlinks'>LinkedIn</a>
+  </div>
+  <p id="copyright">© 2017 Dustin Lee. All Rights Reserved</p>
+</div>
+</body>
+</html>

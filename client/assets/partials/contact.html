@@ -1,0 +1,36 @@
+<body>
+<div ng-controller="messageController as dame">
+<div id="top"></div>
+<div id="contactpic">
+  <div id="imagecontent">
+    <h1 style="margin-top: -100px; color: #ccc; font-family: 'Pacifico', cursive;">Contact</h1>
+  </div>
+  <!-- <h3 id='contactcontent'>Contact Me</h3> -->
+</div>
+<center><div id="contactcontent">
+  <div class="contactform">
+    <h3 id="contactheader" style="border-bottom: 1px solid #ccc; text-align: left;">Send me a Message!</h3>
+  <form ng-submit="dame.addmessage()">
+    <p class="pinfo">Name</p><input class="contactinput" type="text" ng-model='dame.newcontact.name' placeholder="name">
+    <p class="pinfo">Email</p><input class="contactinput" type="text" ng-model='dame.newcontact.email' placeholder="email">
+    <p class="pinfo">Message</p><textarea rows="5" cols="40" class="messagebox" ng-model='dame.newcontact.message' type="text" placeholder="Your Message"></textarea>
+    <input id="linkclick" type="submit" value="submit" style="border: none; margin-top: 10px; text-align: center;">
+  </form>
+    <br>
+  </div>
+  <div class="contactinfo">
+    <h3 style="border-bottom: 1px solid #ccc;"> Contact Information</h3>
+    <i class="fa fa-phone" style="color: #535254; display: inline;"></i><p style="display: inline; text-align: left;"> (626) 321 - 7999</p><br><br>
+    <i class="fa fa-envelope" style="color: #535254; display: inline;"></i><p style="display: inline; text-align: left;"> d.dustinlee@gmail.com</p>
+  </div>
+</div></center>
+</body>
+<script type="text/javascript">
+    $(document).ready(function () {
+        window.scrollTo(0,0);
+    });
+    // document.getElementById("linkclick").onclick = function () {
+    //     window.location = "#/thankyou.html";
+    // };
+</script>
+</div>

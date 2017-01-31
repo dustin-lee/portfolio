@@ -1,0 +1,460 @@
+body {
+  margin: 0px auto;
+  padding: 0px;
+  background-color: #edf0f5
+}
+#navbar {
+  background-color: white;
+  width: 100%;
+}
+.dalogo{
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-left:30px;
+}
+.topnav {
+  background: transparent;
+  border-bottom: none;
+  width: 100%;
+  z-index: 2;
+  transition: 1s;
+}
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    z-index: 3;
+    padding:15px 0 10px 0;
+    width: 100%;
+     /* For browsers that do not support gradients */
+    /*background: -webkit-linear-gradient(white, #D8D8D8);
+    background: -o-linear-gradient(white, #D8D8D8);
+    background: -moz-linear-gradient(white, #D8D8D8);
+    background: linear-gradient(white, #D8D8D8);*/
+    /*float: right;*/
+}
+
+ul.topnav li {
+    margin-right: 30px;
+    float: right;
+}
+
+ul.topnav li a {
+    font-size: 1.3em;
+    font-family: 'Lato', sans-serif;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.5s;
+    /*float: left;*/
+}
+
+ul.topnav li a:hover {
+  color: #ccc;
+  border-bottom: 0.5px solid #ccc;
+  /*color: black;*/
+}
+ul.topnav li.icon { display: none;}
+p {
+  font-size: 1.3em;
+  color: #535254;
+  font-family: 'Lato', sans-serif;
+}
+#footer {
+  width: 100%;
+  background-color:#535254;
+  height: 200px;
+  text-align: center;
+}
+#links {
+  padding: 50px 20px 80px 0px;
+}
+  .footerlinks {
+    text-decoration: none;
+    color: #edf0f5;
+    font-size: 1.3em;
+    margin-left: 10px;
+  }
+  #copyright {
+    font-size: 1em;
+    font-style: italic;
+    color: #fff;
+    margin: auto;
+  }
+#imagecontent {
+  position:absolute;
+  text-align:center;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 1;
+}
+.aligncenter{
+  text-align: center;
+  width: 400px;
+  height: 0;
+  border-top: 2px solid #535254;
+  font-size: 0;
+  margin-top: 100px;
+  opacity: 0.2
+}
+#imagecontent h2 {
+  font-size: 80px;
+  color: #ffffff;
+}
+#imagecontent p {
+  margin: 0px;
+  font-size: 20px;
+  color: #ffffff;
+}
+.myselfpic {
+  width: 250px;
+  height: 270px;
+  padding-top: 20px;
+}
+.myselfpicaftercontent {
+  font-size: 1.3em;
+  width: 360px;
+}
+#afterbannercontent {
+  margin: auto 0px;
+  width: 100%;
+}
+h1 {
+  font-size: 50px;
+  font-family: 'Roboto', sans-serif;
+  /*color: #2FA0D8;*/
+  /*color: #29355d;*/
+  color: #548dd6;
+  /*color: black;*/
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 2em;
+  /*color: #7CBBF2;*/
+  color: #326196;
+  /*color: gray;*/
+}
+#cando{
+  margin: auto;
+  padding-top: 100px;
+  width: 100%;
+}
+#candocontent {
+  /*background-color: #fff;*/
+  padding: 50px 0 30px 0;
+  text-align: center;
+  vertical-align: middle;
+}
+.subheading{
+  width: 300px;
+  padding: 10px 10px 10px 0px;
+  text-align: center;
+  display: inline-block;
+}
+.icons {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  /*-webkit-animation-duration: 3s;*/
+  /*-webkit-animation-delay: 0.1s;
+  opacity: 0;*/
+  /*-webkit-animation-iteration-count: infinite;*/
+}
+
+#candocontent2 {
+  margin: 0px auto;
+  width: 100%;
+  display: inline-block;
+  /*background-color: #fff;*/
+  padding: 50px 0 30px 0;
+  text-align: center;
+  vertical-align: middle;
+}
+.iconstwo {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  opacity: 0;
+  -webkit-animation-delay: .5s;
+}
+#contentholder {
+  padding-left: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.subheading2 {
+  font-size: 2em;
+  width: 380px;
+  padding: 0px 10px 15px 0px;
+  text-align: left;
+  /*display: inline-block;
+  vertical-align: middle;*/
+}
+#pcontent1 {
+  width: 380px;
+  margin: 0px;
+  font-size:1.3em;
+  text-align: left;
+  /*display: inline-block;
+  vertical-align: middle;*/
+}
+
+#candocontent3 {
+  margin: 0px auto;
+  width: 100%;
+  display: inline-block;
+  /*background-color: #fff;*/
+  padding: 50px 0 0px 0;
+  vertical-align: middle;
+}
+#contentholder2 {
+  display: inline-block;
+  vertical-align: middle;
+}
+.iconsthree {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  opacity: 0;
+  -webkit-animation-delay: 2.0s;
+}
+.subheading3 {
+  width: 380px;
+  margin: 0px;
+  margin-left: -25px;
+  padding: 0px 10px 15px 0px;
+  text-align: left;
+}
+#pcontent2 {
+  width: 400px;
+  margin: 0px;
+  text-align: left;
+}
+
+#contactme {
+  padding: 50px 0px 50px 0px;
+  text-align: center;
+}
+#messageme {
+  font-family: 'Lato', sans-serif;
+  background-color: #2FA0D8;
+  color:#fff;
+  font-size: 1.3em;
+  border-radius: 4px;
+  width: 220px;
+  padding: 10px;
+}
+#messageme a{
+  position: relative;
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 1em;
+  font-family: 'Lato', sans-serif;
+}
+
+@media screen and (max-width:680px) {
+  .dalogo{
+    width: 35px;
+    height: 35px;
+    float: left;
+    margin-top: 10px;
+    margin-left:30px;
+  }
+  .aligncenter{
+    text-align: center;
+    width: 100%;
+    height: 0;
+    border-top: 2px solid #535254;
+    font-size: 0;
+    margin-top: 100px;
+    opacity: 0.2
+  }
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    color: #ccc;
+    padding-top: 10px;
+    display: block;
+    text-align: left;
+    /*border-bottom: 1px solid #ccc;*/
+    /*float: none;*/
+  }
+  ul.topnav li a:hover {
+    border-bottom: none;
+    /*color: black;*/
+    background-color: #dbdbdb;
+  }
+  #imagecontent {
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    left: 50%;
+    margin-right: -50%;
+    margin-top:100px;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+  #imagecontent h2 {
+    font-size: 30px;
+  }
+  #imagecontent p {
+    font-size: 13px;
+  }
+  /*.myselfpic {
+    width: 150px;
+    height: 170px;
+  }*/
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  p{
+    font-size: 1.3em;
+  }
+  .myselfpic {
+    width: 200px;
+    height: 220px;
+    padding-top: 20px;
+  }
+  .myselfpicaftercontent{
+    font-size: 1.2em;
+    width: 100%;
+  }
+  #afterbannercontent{
+    width:100%;
+  }
+  /*candocontent*/
+  .subheading{
+    width: 100%;
+    padding: 10px 0px 15px 0px;
+    text-align: center;
+    vertical-align: middle;
+    display: block;
+  }
+
+  .icons {
+    width: 100px;
+    height: 100px;
+    display: inline;
+    vertical-align: middle;
+    /*-webkit-animation-duration: 3s;*/
+    /*-webkit-animation-delay: 0.1s;
+    opacity: 0;*/
+    /*-webkit-animation-iteration-count: infinite;*/
+  }
+  #candocontent {
+    /*background-color: #fff;*/
+    padding: 20px 0 30px 0;
+    text-align: center;
+    vertical-align: middle;
+  }
+  #candocontent2 {
+    margin: 0px auto;
+    width: 100%;
+    display: block;
+    /*background-color: #fff;*/
+    padding: 50px 0 30px 0;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .iconstwo {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    display: inline;
+    vertical-align: middle;
+    opacity: 100;
+    -webkit-animation-delay: 0s;
+  }
+  #contentholder {
+    padding-left: 0px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .subheading2 {
+    font-size: 1.5em;
+    width: 100%;
+    padding: 0px 0px 15px 0px;
+    text-align: center;
+    /*display: inline-block;
+    vertical-align: middle;*/
+  }
+  #pcontent1 {
+    width: 100%;
+    margin: 0px;
+    font-size:1.2em;
+    text-align: center;
+    /*display: inline-block;
+    vertical-align: middle;*/
+  }
+  /*candocontent3*/
+
+  #candocontent3 {
+    margin: 0px auto;
+    width: 100%;
+    /*display: inline-block;*/
+    /*background-color: #fff;*/
+    padding: 50px 0 0px 0;
+    vertical-align: middle;
+  }
+  #contentholder2 {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .iconsthree {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    display: inline;
+    vertical-align: middle;
+    opacity: 100;
+    -webkit-animation-delay: 0s;
+  }
+  .subheading3 {
+    width: 100%;
+    margin: 0px;
+    padding: 0px 10px 15px 0px;
+    text-align: center;
+  }
+  #pcontent2 {
+    width: 100%;
+    font-size: 1.2em;
+    margin: 0px;
+    text-align: center;
+  }
+
+}

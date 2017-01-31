@@ -1,0 +1,52 @@
+#header .readmore {
+  display: block;
+  width: 43px;
+  height: 22px;
+  background: url("https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-08-128.png") scroll no-repeat center center;
+  left: 50%;
+  margin-left: -22px;
+  bottom: 5%;
+  position: absolute;
+  background-size: 43px auto;
+  padding: 20px;
+  z-index: 500;
+  cursor: pointer;
+  -webkit-transform-origin: 0% 50%;
+      -ms-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+  -webkit-animation: arrowAnimation 2s infinite;
+  /* Safari 4+ */
+  /* Fx 5+ */
+  /* Opera 12+ */
+  animation: arrowAnimation 2s infinite;
+  /* IE 10+, Fx 29+ */
+}
+@media (max-width: 767px) {
+  #header .readmore {
+    width: 21.5px;
+    height: 11px;
+    margin-left: -11px;
+    background-size: 21.5px auto;
+    padding: 10px;
+    -webkit-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+            transform: translateY(100%);
+    display: none;
+  }
+}
+@-webkit-keyframes arrowAnimation {
+  0%, 100% {
+    bottom: 6%;
+  }
+  50% {
+    bottom: 5%;
+  }
+}
+@keyframes arrowAnimation {
+  0%, 100% {
+    bottom: 6%;
+  }
+  50% {
+    bottom: 5%;
+  }
+}

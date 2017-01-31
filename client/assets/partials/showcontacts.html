@@ -1,0 +1,12 @@
+<div ng-controller="messageController as dame">
+  <h1 style="padding-top: 80px;">Hello {{dame._user.first}}</h1>
+  <h3> Here are the messages </h3>
+  <input type="text" placeholder="search name" ng-model='messageFilter'>
+    <div style="border: 1px solid black; background-color:#ccc; width: 400px; padding: 0px 0px 20px 0px;" ng-repeat="x in dame.messages | filter: messageFilter track by $index">
+      <strong><p>Name: {{x.name}}</p></strong>
+      <p>Email: {{x.email}}</p>
+      <p>Message:{{x.message}}</p>
+      <p>Date:{{x.timestamps}}</p>
+      <p>id:{{x._id}}</p>
+    </div>
+</div>

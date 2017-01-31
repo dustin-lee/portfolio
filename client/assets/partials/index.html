@@ -1,0 +1,116 @@
+<body>
+<!-- <h2 class="w3-center">Manual Slideshow</h2> -->
+<div class="bannerslide">
+  <!-- <img class="mySlides" src="assets/static/iheartcoding.jpg" style="width:100%"> -->
+  <!-- <img class="mySlides" src="assets/static/chair.jpg" style="width:100%"> -->
+  <img class="mySlides" src="assets/static/homebannerpic.jpg" style="width:100%">
+  <!-- <img class="mySlides" src="img_forest.jpg" style="width:100%"> -->
+  <!-- <div id='imagecontent'>
+    <center><h2> Dustin Lee </h2>
+    <p>Full Stack Web Developer / IOS Developer / Designer </p></center>
+  </div> -->
+  <!-- <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+  <a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)">&#10095;</a> -->
+</div>
+<div id="afterbannercontent">
+  <center><img class='myselfpic' src="assets/static/myselfpic.png">
+  <h1>Hello!</h1></center>
+  <center><p class="myselfpicaftercontent">I'm a Full-Stack Web Developer, Designer, and IOS Developer
+  based in Los Angeles, Ca. With a strong passion for creating
+    web and mobile applications.</p><center>
+</div>
+<center><div class="aligncenter">-</div></center>
+
+<div id="cando">
+  <center><h1>My Skills</h1></center>
+</div>
+  <center><div id="candocontent">
+    <h3 class="subheading">Languages I know.</h3>
+    <img class='icons' src="assets/static/meanlogoed.png">
+    <img class='icons' src="assets/static/pythonlogoed.png">
+    <img class='icons' src="assets/static/swiftlogoed.png">
+  </div></center>
+
+  <center><div id='candocontent2'>
+    <img class="iconstwo" src="assets/static/psdlogo.png">
+    <img class="iconstwo" src="assets/static/ailogo.png">
+    <div id='contentholder'>
+      <h3 class="subheading2">Designing</h3>
+      <p id="pcontent1">I like to keep it minimal and asthetically appealing.
+      While focusing on conveying the message that you want the customer to interpret.</p>
+    </div>
+</div></center>
+
+<center><div id='candocontent3'>
+<div id='contentholder2'>
+      <h3 class="subheading3">Developing</h3>
+      <p id="pcontent2">I am able to create your website to run</br>
+        across multiple devices, from large screens </br>
+        to mobile compatability.</br>
+      </p>
+</div>
+  <img class="iconsthree" src="assets/static/computerlogo.png">
+  <img class="iconsthree" src="assets/static/phonepic.png">
+</div></center>
+
+<center><div class="aligncenter" >-</div></center>
+
+<!-- <div id='contactme'>
+  <h1 class='subheading4'>Lets Get in Touch!</h1>
+  <h3> Available for freelance work</h3>
+  <p> Message me if you want to get started with a project!</br>
+  <center><p id="messageme"><i class="fa fa-envelope-o"><strong><a href="malito.d.dustinlee@gmail.com class="messagelink>MESSAGE ME</strong></a></i></p></center>
+</div> -->
+<script>
+
+// var slideIndex = 1;
+// showDivs(slideIndex);
+//
+// function plusDivs(n) {
+//   showDivs(slideIndex += n);
+// }
+//
+// function showDivs(n) {
+//   var i;
+//   var x = document.getElementsByClassName("mySlides");
+//   if (n > x.length) {slideIndex = 1}
+//   if (n < 1) {slideIndex = x.length}
+//   for (i = 0; i < x.length; i++) {
+//      x[i].style.display = "none";
+//   }
+//   x[slideIndex-1].style.display = "block";
+// }
+
+var secondcontent = $('#candocontent').offset().top + $('#candocontent').height();
+var secondcontentwo = $('#candocontent2').offset().top + $('#candocontent2').height();
+var secondcontenthree = $('#candocontent3').offset().top + $('#candocontent3').height();
+
+$(window).on('scroll', function() {
+  var stop = Math.round($(window).scrollTop());
+
+  // if (stop > secondcontent) {
+  //   $('.icons').addClass('animated fadeInLeft')
+  // }
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+          // what you want to run in mobile
+  }
+  else {
+    if (stop > secondcontentwo) {
+      $('.iconstwo').addClass('animated rollIn')
+    }
+    if (stop > secondcontenthree) {
+      $('.iconsthree').addClass('animated rollIn')
+    }
+    else {
+      $('.icons').removeClass('animated fadeInLeft')
+      $('.iconstwo').removeClass('animated rollIn')
+      $('.iconsthree').removeClass('animated rollIn')
+    }
+  }
+})
+
+</script>
+
+</body>
+  <div id="Banner">
+  </div>
